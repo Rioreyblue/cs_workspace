@@ -1,5 +1,5 @@
 ﻿ //global variables
-        int new_user_input
+        int new_user_input;
         
         //user input
         Console.WriteLine("Enter integer input: ");
