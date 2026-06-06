@@ -1,0 +1,14 @@
+# Ignore all files by default
+*
+
+# Do NOT ignore directories, so Git can look inside them
+!*/
+
+# Do NOT ignore your specific file
+!Program.cs
+!**/Program.cs
+
+!*GuessingSystem/Program.cs
+!*InputIntegerCheker/Program.cs
+!*CalculatorCs/Program.cs
+!*.gitignore
