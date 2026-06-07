@@ -26,10 +26,10 @@ if(op == "+"){
     Console.WriteLine($"The total Sum is: {totalSum}");
 }
 
-// if(op == "-"){
-//     totalSub = num1 - num2;
-//     Console.WriteLine($"The total Sub is: {totalSub}");
-// }
+if(op == "-"){
+    totalSub = num1 - num2;
+    Console.WriteLine($"The total Sub is: {totalSub}");
+}
 
 
 
