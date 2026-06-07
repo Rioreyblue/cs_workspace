@@ -31,6 +31,10 @@ if(op == "-"){
     Console.WriteLine($"The total Sub is: {totalSub}");
 }
 
+if(op == "*"){
+    totalMul = num1 * num2;
+    Console.WriteLine($"The total Multiplication is: {totalMul}");
+}
 
 
 //function
