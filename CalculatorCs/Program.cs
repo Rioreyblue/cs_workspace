@@ -4,8 +4,10 @@ Console.Write("Enter a first number: ");
 int num1 = int.Parse(Console.ReadLine());
 
 Console.Write("Enter an operator: ");
-Console.WriteLine("""Please select an operator in the following:
-{+}, {-}, {x}, {/}""");
+Console.WriteLine("""
+Please select an operator in the following:
+{+}, {-}, {x}, {/}
+""");
 string op = Console.ReadLine().ToLower();
 
 Console.Write("Enter a second number: ");
@@ -24,10 +26,10 @@ if(op == "+"){
     Console.WriteLine($"The total Sum is: {totalSum}");
 }
 
-if(op == "-"){
-    totalSub = num1 - num2;
-    Console.WriteLine($"The total Sub is: {totalSub}");
-}
+// if(op == "-"){
+//     totalSub = num1 - num2;
+//     Console.WriteLine($"The total Sub is: {totalSub}");
+// }
 
 
 
