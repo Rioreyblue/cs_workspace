@@ -36,6 +36,10 @@ if(op == "*"){
     Console.WriteLine($"The total Multiplication is: {totalMul}");
 }
 
+if(op == "/"){
+    totalDiv = num1 / num2;
+    Console.WriteLine($"The total Division is: {totalDiv}");
+}
 
 //function
 // private static string OperatorMsg(){
