@@ -18,7 +18,9 @@ private static int getValidInteger(string prompt){
 
     Console.WriteLine(" Enter a first number: ")
     if(!int.TryParse(Console.Readline(), out valid_input)){
+        Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("Invalid input, only put numbers: ");
+        Console.ResetColor();
         Console.Write(prompt);
     }
     return valid_input;
