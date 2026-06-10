@@ -19,19 +19,28 @@ class Program
     //input function
     private static int getValidInteger(string prompt)
     {
-        int valid_input;
-        Console.Write(prompt);
+        int valid_input = 0;
 
-        while (!int.TryParse(Console.ReadLine().ToLower(), out valid_input))
+        while (true)
         {
-            if(valid_input == "exit")
-            break;
-            Console.ForegroundColor = ConsoleColor.Red;
-            //restriction
-            Console.WriteLine("Invalid input, only put numbers only!);
-            Console.ResetColor();
             Console.Write(prompt);
+            string input = Console.ReadLine();
+
+            if (input.ToLower() == "exit")
+            {
+                break;
+            }
+
+            if (int.TryParse(input, out valid_input))
+            {
+                break;
+            }
+
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Invalid input!");
+            Console.ResetColor();
         }
+
         return valid_input;
     }
 }
