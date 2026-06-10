@@ -8,7 +8,7 @@ static void Main(){
     // string op = getValidOperator();
 
     //safe number input for 2
-    int input_2 = getValidInteger("Enter a first number: ");
+    int input_2 = getValidInteger("Enter a second number: ");
 }
 
 //input function
@@ -16,8 +16,9 @@ private static int getValidInteger(string prompt){
     int valid_input;
     Console.Write(prompt);
 
-    if(!int.TryParse(Console.Readline(), out valid_input)){
-        Console.ForegroundColor = ConsoleColor.Red;
+    while (!int.TryParse(Console.ReadLine(), out valid_input))
+    {
+        Console.ForegroundColor = ConsoleColor.Blue;
         Console.WriteLine("Invalid input, only put numbers: ");
         Console.ResetColor();
         Console.Write(prompt);
