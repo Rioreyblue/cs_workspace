@@ -45,10 +45,19 @@ class Program
     }
 
     //function for operation
-    private static string getValidOperator(){
-        while(true){
-            Console.WriteLine("\nPlease select an operator [+], [-], [*], [/]. ");
-            string input = Console.ReadLine()?.Trim().ToLower();
+    private static string getValidOperator()
+    {
+        Console.WriteLine("\nPlease select an operator [+], [-], [*], [/]. ");
+        string input = Console.ReadLine()?.Trim().ToLower();
+
+        while (true)
+        {
+            if (input == "+" || input == "-" || input == "*" || input == "/")
+            {
+                return input;
+            }
         }
+
+        // Console.WriteLine("Invalid Please")
     }
 }
