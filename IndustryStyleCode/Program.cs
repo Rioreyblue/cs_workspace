@@ -10,7 +10,7 @@ class Program
         int input_1 = getValidInteger("Enter a first number: ");
 
         //safe operator input
-        // string op = getValidOperator();
+        string op = getValidOperator();
 
         //safe number input for 2
         int input_2 = getValidInteger("Enter a second number: ");
