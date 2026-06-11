@@ -58,6 +58,8 @@ class Program
             }
         }
 
-        // Console.WriteLine("Invalid Please")
+        Console.ForegroundColor = ConsoleColor.Red();
+        Console.WriteLine("Invalid Please select a valid operation")
+        Console.ResetColor();
     }
 }
