@@ -14,6 +14,8 @@ class Program
 
         //safe number input for 2
         int input_2 = getValidInteger("Enter a second number: ");
+
+        Console.WriteLine($"The total calculation for first number: {input_1} and for second number: {input_2} with the selected formula: {op} is: {}")
     }
 
     //input function
