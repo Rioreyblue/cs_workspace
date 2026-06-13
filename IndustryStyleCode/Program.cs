@@ -64,4 +64,9 @@ class Program
         Console.WriteLine("Invalid Please select a valid operation");
         Console.ResetColor();
     }
+
+    //function for display and calculation
+    private static void calculateAndDisplay(int input_1, int input_2, string op){
+
+    }
 }
