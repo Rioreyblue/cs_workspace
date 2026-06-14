@@ -74,6 +74,10 @@ class Program
             result = input_1 + input_2;
             operationName = "sum";
         }
+        else if(op == "-"){
+            result = input_1 + input_2;
+            operationName = "Subtraction";
+        }
         else{
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine($"Invalid Input!")
