@@ -75,8 +75,12 @@ class Program
             operationName = "sum";
         }
         else if(op == "-"){
-            result = input_1 + input_2;
+            result = input_1 - input_2;
             operationName = "Subtraction";
+        }
+        else if(op == "*"){
+            result = input_1 * input_2;
+            operationName = "Multiplication"
         }
         else{
         Console.ForegroundColor = ConsoleColor.Red;
