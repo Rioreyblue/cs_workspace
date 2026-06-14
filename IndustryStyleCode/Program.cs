@@ -83,7 +83,14 @@ class Program
             operationName = "Multiplication"
         }
         else if(op == "/"){
-            
+
+            if(input_2 == 0){
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid Division by zero is undefined.");
+                Console.ResetColor();
+                return;
+            }
+
             result = input_1 / input_2;
             operationName = "Division";
         }
