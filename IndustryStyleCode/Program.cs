@@ -67,6 +67,21 @@ class Program
 
     //function for display and calculation
     private static void calculateAndDisplay(int input_1, int input_2, string op){
+        double result = 0;
+        string operationName = "";
 
+        if(op == "+"){
+            result = input_1 + input_2;
+            operationName = "sum";
+        }
+        else{
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine($"Invalid Input!")
+        Console.ResetColor();
+        }
+
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine($"The total {operationName} is : {result}")
+        Console.ResetColor();
     }
 }
