@@ -72,7 +72,7 @@ class Program
 
         if(op == "+"){
             result = input_1 + input_2;
-            operationName = "sum";
+            operationName = "Addition";
         }
         else if(op == "-"){
             result = input_1 - input_2;
@@ -82,10 +82,16 @@ class Program
             result = input_1 * input_2;
             operationName = "Multiplication"
         }
+        else if(op == "/"){
+            
+            result = input_1 / input_2;
+            operationName = "Division";
+        }
         else{
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine($"Invalid Input!")
         Console.ResetColor();
+        retrun;
         }
 
         Console.ForegroundColor = ConsoleColor.Green;
