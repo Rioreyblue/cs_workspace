@@ -15,8 +15,7 @@ class Program
         //safe number input for 2
         int input_2 = getValidInteger("Enter a second number: ");
 
-        calculateAndDisplay(input_1,op, input_2);
-
+        calculateAndDisplay(input_1, op, input_2);
     }
 
     //input function
@@ -59,47 +58,52 @@ class Program
             {
                 return input;
             }
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Invalid Please select a valid operation");
+            Console.ResetColor();
         }
-
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine("Invalid Please select a valid operation");
-        Console.ResetColor();
     }
 
     //function for display and calculation
-    private static void calculateAndDisplay(int input_1, int input_2, string op){
+    private static void calculateAndDisplay(int input_1, string op, int input_2)
+    {
         double result = 0;
         string operationName = "";
 
-        if(op == "+"){
+        if (op == "+")
+        {
             result = input_1 + input_2;
             operationName = "Addition";
         }
-        else if(op == "-"){
+        else if (op == "-")
+        {
             result = input_1 - input_2;
             operationName = "Subtraction";
         }
-        else if(op == "*"){
+        else if (op == "*")
+        {
             result = input_1 * input_2;
             operationName = "Multiplication";
         }
-        else if(op == "/"){
-
-            if(input_2 == 0){
+        else if (op == "/")
+        {
+            if (input_2 == 0)
+            {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Invalid Division by zero is undefined.");
                 Console.ResetColor();
                 return;
             }
 
-            result = input_1 / input_2;
+            result = (double)input_1 / input_2;
             operationName = "Division";
         }
-        else{
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine($"Invalid Input!");
-        Console.ResetColor();
-        return;
+        else
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"Invalid Input!");
+            Console.ResetColor();
+            return;
         }
 
         Console.ForegroundColor = ConsoleColor.Green;
