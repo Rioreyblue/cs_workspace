@@ -15,7 +15,8 @@ class Program
         //safe number input for 2
         int input_2 = getValidInteger("Enter a second number: ");
 
-        Console.WriteLine($"The total calculation for first number: {input_1} and for second number: {input_2} with the selected formula: {op} is: {}")
+        calculateAndDisplay(input_1,op, input_2);
+
     }
 
     //input function
@@ -80,7 +81,7 @@ class Program
         }
         else if(op == "*"){
             result = input_1 * input_2;
-            operationName = "Multiplication"
+            operationName = "Multiplication";
         }
         else if(op == "/"){
 
@@ -96,13 +97,13 @@ class Program
         }
         else{
         Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine($"Invalid Input!")
+        Console.WriteLine($"Invalid Input!");
         Console.ResetColor();
-        retrun;
+        return;
         }
 
         Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine($"The total {operationName} is : {result}")
+        Console.WriteLine($"The total {operationName} is : {result}");
         Console.ResetColor();
     }
 }
