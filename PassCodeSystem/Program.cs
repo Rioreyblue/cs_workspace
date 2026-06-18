@@ -12,4 +12,5 @@ class Program
     private static string getValidString() { }
 
     // function logic
+    private static void codeDisplay(){}
 }
