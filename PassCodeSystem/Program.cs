@@ -5,7 +5,11 @@ class Program
     //main getter
     static void Main()
     {
-        string user_input = getValidString("Enter the passcode");
+        string input_name = getValidInteger();
+
+        int input_code = getValidCode();
+
+        getcodeDisplay(input_name, input_code);
     }
 
     //function input
@@ -16,5 +20,5 @@ class Program
     }
 
     // function logic
-    private static void codeDisplay() { }
+    private static void getcodeDisplay() { }
 }
