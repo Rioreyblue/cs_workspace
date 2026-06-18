@@ -11,6 +11,10 @@ class Program
     //function input
     private static string getValidString() { }
 
+    private static int getValidCode(){
+        
+    }
+
     // function logic
-    private static void codeDisplay(){}
+    private static void codeDisplay() { }
 }
