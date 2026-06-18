@@ -13,13 +13,18 @@ class Program
     }
 
     //function input
-    private static string getValidString(string input) {
+    private static string getValidString(int input) {
         //for declaration
         string valid_input = "";
 
-        
+        wgile(true){
+            Console.WriteLine(input);
+        input = int.Parse(Console.ReadLine().toLower());
 
-        if()
+        if(input == "exit"){
+            break;
+        }
+        }
 
         //invalid reasoning
         Console.ForegroundColor = ConsoleColor.Red;
