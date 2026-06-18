@@ -19,17 +19,20 @@ class Program
 
         wgile(true){
             Console.WriteLine(input);
-        input = int.Parse(Console.ReadLine().toLower());
+        input = int.Parse(Console.ReadLine());
 
-        if(input == "exit"){
+        if(input.ToLower() == "exit"){
             break;
         }
+        if(input.tryParse(input, out valid_input)){
+            break;
         }
-
         //invalid reasoning
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("Invalid input. Please enter letter for name");
         Console.ResetColor();
+        }
+        return valid_input;
      }
 
     private static int getValidCode(){
