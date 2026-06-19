@@ -7,7 +7,7 @@ class Program
     {
         string input_name = getValidInteger();
 
-        int input_code = getValidCode();
+        bool input_code = getValidCode();
 
         getcodeDisplay(input_name, input_code);
     }
@@ -35,7 +35,7 @@ class Program
         return valid_input;
      }
 
-    private static int getValidCode(){
+    private static bool getValidCode(){
         Console.WriteLine("Enter a code to vaidate: ");
         int input = int.Parse(Console.ReadLine());
         int exact_code = 5932;
