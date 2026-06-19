@@ -37,7 +37,7 @@ class Program
 
     private static int getValidCode(){
         int exact_code = 5932;
-        int valid_input = 0 ;
+        int val_input = 0 ;
 
         while(true){
             //logic for incorrect input
