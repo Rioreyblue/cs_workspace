@@ -36,7 +36,25 @@ class Program
      }
 
     private static int getValidCode(){
-        
+        Console.WriteLine("Enter a code to vaidate: ");
+        int input = int.Parse(Console.ReadLine());
+        int exact_code = 5932;
+        bool eval = flase;
+
+        while(true){
+            //logic
+            if(input == exact_code){
+                eval = true;
+                return eval;
+            }else{
+                Console.WriteLine("incorrect code. ");
+            }
+
+            //error validation
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("INvalid. Please enter only interger as code.")
+            Console.ResetColor();
+        }
     }
 
     // function logic
