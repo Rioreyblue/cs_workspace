@@ -54,7 +54,7 @@ class Program
             //logic for correct code
             if(val_input == exact_code)
             {
-                return input;
+                return val_input;
             }
             else
             {
