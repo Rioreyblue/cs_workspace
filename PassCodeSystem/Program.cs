@@ -35,25 +35,33 @@ class Program
         return valid_input;
      }
 
-    private static bool getValidCode(){
-        Console.WriteLine("Enter a code to vaidate: ");
-        int input = int.Parse(Console.ReadLine());
+    private static int getValidCode(){
         int exact_code = 5932;
-        bool eval = flase;
+        int valid_input = 0 ;
 
         while(true){
-            //logic
-            if(input == exact_code){
-                eval = true;
-                return eval;
-            }else{
-                Console.WriteLine("incorrect code. ");
+            //logic for incorrect input
+        Console.WriteLine("Enter a code to vaidate: ");
+        string input = Console.ReadLine();
+        
+            if(!int.tryParse(input, out val_input)){
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Invalid. Please enter only integers as code.");
+                Console.ResetColor();
+                continue;
             }
 
-            //error validation
+            //logic for correct code
+            if(val_input == exact_code)
+            {
+                return input;
+            }
+            else
+            {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("INvalid. Please enter only interger as code.")
+            Console.WriteLine("incorrect code. ");
             Console.ResetColor();
+            }
         }
     }
 
