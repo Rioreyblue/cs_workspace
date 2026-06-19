@@ -44,7 +44,7 @@ class Program
         Console.WriteLine("Enter a code to vaidate: ");
         string input = Console.ReadLine();
         
-            if(!int.tryParse(input, out val_input)){
+            if(!int.TryParse(input, out val_input)){
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Invalid. Please enter only integers as code.");
                 Console.ResetColor();
