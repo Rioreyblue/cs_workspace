@@ -66,5 +66,10 @@ class Program
     }
 
     // function logic
-    private static void getcodeDisplay() { }
+    private static void getcodeDisplay() { 
+
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Invalid Code. Please try again.");
+        Console.ResetColor();
+    }
 }
