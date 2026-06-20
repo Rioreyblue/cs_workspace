@@ -36,7 +36,6 @@ class Program
      }
 
     private static int getValidCode(){
-        int exact_code = 5932;
         int val_input = 0 ;
 
         while(true){
@@ -50,26 +49,32 @@ class Program
                 Console.ResetColor();
                 continue;
             }
-
-            //logic for correct code
-            if(val_input == exact_code)
-            {
-                return val_input;
-            }
             else
             {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("incorrect code. ");
-            Console.ResetColor();
+            // Console.ForegroundColor = ConsoleColor.Red;
+            // Console.WriteLine("incorrect code. ");
+            // Console.ResetColor();
+            break;
             }
         }
+        return val_input;
     }
 
     // function logic
     private static void getcodeDisplay() { 
-
+        int exact_code = 5932;
+                    //logic for correct code
+            if(val_input == exact_code)
+            {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("Code verificastion Success!.");
+        Console.ResetColor();
+            }
+            else{
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine("Invalid Code. Please try again.");
         Console.ResetColor();
+            }
+
     }
 }
