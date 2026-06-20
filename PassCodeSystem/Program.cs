@@ -61,10 +61,10 @@ class Program
     }
 
     // function logic
-    private static void getcodeDisplay() { 
+    private static void getcodeDisplay(string name, int code) { 
         int exact_code = 5932;
                     //logic for correct code
-            if(val_input == exact_code)
+            if(code == exact_code)
             {
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("Code verificastion Success!.");
