@@ -20,7 +20,7 @@ class Program
 
         while (true)
         {
-            Console.WriteLine(input);
+            Console.WriteLine(Enter your name: );
             string input = Console.ReadLine();
 
             if (input.ToLower() == "exit")
