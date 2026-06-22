@@ -5,7 +5,7 @@ class Program
     //main getter
     static void Main()
     {
-        string input_name = getValidInteger();
+        string input_name = getValidString();
 
         int input_code = getValidCode();
 
