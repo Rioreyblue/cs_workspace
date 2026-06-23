@@ -20,23 +20,24 @@ class Program
 
         while (true)
         {
-            Console.WriteLine(Enter your name: );
+            Console.WriteLine("Enter your name: ");
             string input = Console.ReadLine();
 
             if (input.ToLower() == "exit")
             {
                 break;
             }
-            if (input.tryParse(input, out valid_input))
-            {
-                break;
-            }
-            else
+            if (input.tryParse(input, out _))
             {
                 //invalid reasoning
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Invalid input. Please enter letter for name");
                 Console.ResetColor();
+            }
+            else
+            {
+                valid_input = input;
+                break;
             }
         }
         return valid_input;
