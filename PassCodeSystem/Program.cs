@@ -45,14 +45,15 @@ class Program
 
     private static int getValidCode()
     {
+        int exact_code = 5932; // Kept your key variable alive here
         int val_input = 0;
 
         while (true)
         {
-            //logic for incorrect input
-            Console.WriteLine("Enter a code to vaidate: ");
+            Console.WriteLine("Enter a code to validate: ");
             string input = Console.ReadLine();
 
+            // 1. Checks if it's a valid integer format
             if (!int.TryParse(input, out val_input))
             {
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -60,12 +61,17 @@ class Program
                 Console.ResetColor();
                 continue;
             }
+
+            // 2. Checks if the integer is the CORRECT code
+            if (val_input == exact_code)
+            {
+                break; // Code matches! Break out of the loop and return it
+            }
             else
             {
-                // Console.ForegroundColor = ConsoleColor.Red;
-                // Console.WriteLine("incorrect code. ");
-                // Console.ResetColor();
-                break;
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Incorrect code. Please try again.");
+                Console.ResetColor();
             }
         }
         return val_input;
