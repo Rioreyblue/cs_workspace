@@ -12,10 +12,9 @@ class Program
         getcodeDisplay(input_name, input_code);
     }
 
-    //function input
+    // function input
     private static string getValidString()
     {
-        //for declaration
         string valid_input = "";
 
         while (true)
@@ -27,11 +26,14 @@ class Program
             {
                 break;
             }
-            if (input.tryParse(input, out _))
+
+            // FIX: If int.TryParse is TRUE, it means they entered a number.
+            // We want letters, so entering a number is INVALID.
+            if (int.TryParse(input, out _))
             {
-                //invalid reasoning
+                // invalid reasoning
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Invalid input. Please enter letter for name");
+                Console.WriteLine("Invalid input. Please enter letters for name.");
                 Console.ResetColor();
             }
             else
