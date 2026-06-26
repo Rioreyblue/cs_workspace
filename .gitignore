@@ -14,4 +14,6 @@
 !*IndustryStyleCode/Program.cs
 !*PassCodeSystem/Program.cs
 !*TaskTracker/Program.cs
+!*TaskTracker/TodoTask.cs
+!*TaskTracker/TaskRepository.cs
 !*.gitignore
