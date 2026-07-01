@@ -17,6 +17,6 @@
 !*TaskTracker/TodoTask.cs
 !*TaskTracker/TaskRepository.cs
 !*GuessingGame/Program.cs
-!*GuessingGame/data
-!*GuessingGame/src
+!*GuessingGame/data/
+!*GuessingGame/src/
 !*.gitignore
