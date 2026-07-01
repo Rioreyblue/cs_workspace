@@ -19,4 +19,6 @@
 !*GuessingGame/Program.cs
 !*GuessingGame/data/
 !*GuessingGame/src/
+!*GuessingGame/src/GameLogic.cs
+!*GuessingGame/src/Storage.cs
 !*.gitignore
