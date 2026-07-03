@@ -21,4 +21,7 @@
 !*GuessingGame/src/
 !*GuessingGame/src/GameLogic.cs
 !*GuessingGame/src/Storage.cs
+# 3rd procject
+!*InventorySystem/Program.cs
+
 !*.gitignore
