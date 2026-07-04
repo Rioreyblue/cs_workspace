@@ -24,6 +24,6 @@
 # 3rd procject
 !*InventorySystem/Program.cs
 !*InventorySystem/Models/Products.cs
-!*InventorySystem/Sevices/Inventory.cs
+!*InventorySystem/Services/Inventory.cs
 
 !*.gitignore
