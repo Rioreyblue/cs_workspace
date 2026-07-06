@@ -29,6 +29,10 @@
 !*DungeonCrawler/Program.cs
 !*DungeonCrawler/Core
 !*DungeonCrawler/Models
+!*DungeonCrawler/Models/Enemy.cs
+!*DungeonCrawler/Models/Player.cs
+!*DungeonCrawler/Models/Room.cs
+!*DungeonCrawler/Models/Position.cs
 !*DungeonCrawler/Standard
 
 
