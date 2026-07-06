@@ -27,6 +27,9 @@
 !*InventorySystem/Services/Inventory.cs
 # 4th project
 !*DungeonCrawler/Program.cs
+!*DungeonCrawler/Core
+!*DungeonCrawler/Models
+!*DungeonCrawler/Standard
 
 
 !*.gitignore
