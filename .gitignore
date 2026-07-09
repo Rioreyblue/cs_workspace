@@ -28,6 +28,7 @@
 # 4th project
 !*DungeonCrawler/Program.cs
 !*DungeonCrawler/Core
+!*DungeonCrawler/Core/GameMap.cs
 !*DungeonCrawler/Models
 !*DungeonCrawler/Models/Enemy.cs
 !*DungeonCrawler/Models/Player.cs
