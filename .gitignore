@@ -29,6 +29,7 @@
 !*DungeonCrawler/Program.cs
 !*DungeonCrawler/Core
 !*DungeonCrawler/Core/GameMap.cs
+!*DungeonCrawler/Core/GameEngine.cs
 !*DungeonCrawler/Models
 !*DungeonCrawler/Models/Enemy.cs
 !*DungeonCrawler/Models/Player.cs
